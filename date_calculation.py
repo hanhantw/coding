@@ -49,9 +49,6 @@ def date_calculator(year: int, month: int, day: int, days_to_add: int) -> set:
                 year += month // 12
                 month = month % 12
 
-    month = month % 12
-    year += month // 12
-
     return (year, month, day)
 
 
